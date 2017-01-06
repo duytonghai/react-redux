@@ -1,0 +1,40 @@
+bot.env
+node_modules/
+*node_modules/
+dist/*
+coverage/
+*junitResults/
+npm-debug.log
+*.pyc
+*.swp
+*.swo
+*.un~
+.DS_Store
+.awspublish-*
+
+# VIM Ctags
+tag
+
+# tern_for_vim set up file
+.tern-project
+
+# Ignores for the Behave Tests
+.Python
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEA Ignores
+.idea
+.bundle/
+atlassian-ide-plugin.xml
+
+# JUnit files for Jenkins reporters
+*.xml
