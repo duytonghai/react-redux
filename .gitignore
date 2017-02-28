@@ -38,3 +38,7 @@ atlassian-ide-plugin.xml
 
 # JUnit files for Jenkins reporters
 *.xml
+
+# NPM
+*log*
+*debug*
