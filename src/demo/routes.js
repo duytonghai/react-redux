@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import App from './demo/components/App';
-import About from './demo/components/About';
-import HomePage from './demo/components/HomePage';
-import NotFoundPage from './demo/components/NotFoundPage';
-import FormSavingPageContainer from './demo/components/FormSavingPageContainer';
+import App from './components/App';
+import About from './components/About';
+import HomePage from './components/HomePage';
+import NotFoundPage from './components/NotFoundPage';
+import FormSavingPageContainer from './components/FormSavingPageContainer';
 
 export default (
   <Route path="/" component={App}>
