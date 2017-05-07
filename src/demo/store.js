@@ -1,9 +1,9 @@
 import {createStore, compose, applyMiddleware} from 'redux';
 // import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
-import rootReducer from '../reducers';
+import rootReducer from './reducer';
 
-const configureStore = function(initialState) {
+const demoStore = function(initialState) {
   const middlewares = [
     // Add other middleware on this line...
 
@@ -21,4 +21,4 @@ const configureStore = function(initialState) {
   );
 };
 
-export default configureStore;
+export default demoStore;
