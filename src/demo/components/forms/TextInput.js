@@ -7,7 +7,6 @@ const TextInput = (props) => {
 
   return (
     <div>
-      <div>Value is: {props.value}</div>
       <input className="small"
         type="text"
         placeholder={props.placeholder}
@@ -19,11 +18,7 @@ const TextInput = (props) => {
 TextInput.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  onChange: PropTypes.func,
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ])
+  onChange: PropTypes.func
 };
 
 export default TextInput;

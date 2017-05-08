@@ -16,7 +16,8 @@ class Form extends React.Component {
   }
 
   save() {
-    this.props.saveValue(this.props.dataSaving);
+    console.log("Save Clicked!!!");
+    this.props.saveValue(this.props.dataSaving.input_1);
   }
 
   render() {
@@ -25,10 +26,10 @@ class Form extends React.Component {
     return (
       <div>
         <h2>Form Saving</h2>
+        <div>Value is: {dataSaving.input_1}</div>
         <TextInput name="Input_1"
           placeholder="Input 1"
-          onChange={this.savingsKeypress}
-          value={dataSaving.input_1} />
+          onChange={this.savingsKeypress} />
 
         <input type="submit" value="Save" onClick={this.save} />
       </div>
