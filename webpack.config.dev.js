@@ -7,6 +7,12 @@ export default {
   resolve: {
     extensions: ['', '.js', '.jsx', '.json']
   },
+  node: {
+    console: null,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
   debug: true,
   devtool: 'eval-source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
   noInfo: true, // set to false to see a list of every file being bundled.
@@ -14,7 +20,7 @@ export default {
     // must be first entry to properly set public path
     './src/webpack-public-path',
     'webpack-hot-middleware/client?reload=true',
-    path.resolve(__dirname, 'src/demo/index.js') // Defining path seems necessary for this to work consistently on Windows machines.
+    path.resolve(__dirname, 'src/movie_db/index.js') // Defining path seems necessary for this to work consistently on Windows machines.
   ],
   target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
   output: {
