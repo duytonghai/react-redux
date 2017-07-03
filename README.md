@@ -15,18 +15,17 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | b
     # Set a default node version to run every time (change.dot)
     nvm alias default v7.7.4
  ```
- 
+
  * Setup and start application
- ```
- # Clone this repo with command https://github.com/duytonghai/react-redux
- 
- # Install npm packages with command
- npm install
- 
- # Start application
- npm run start
- 
- # List out other commands
- npm run
- ```
- 
+```
+    # Clone this repo with command https://github.com/duytonghai/react-redux
+
+    # Install npm packages with command
+    npm install
+
+    # Start application
+    npm run start
+
+    # List out other commands
+    npm run
+```
